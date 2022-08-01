@@ -12,7 +12,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/M-Oblue">
-    <img src="https://img.icons8.com/external-flat-wichaiwi/64/undefined/external-bush-fire-climate-change-flat-wichaiwi.png" alt="Logo" width="100" height="100"/> 
+    <img src="https://img.icons8.com/external-flat-berkahicon/344/external-Forest-Fire-2020-event-flat-berkahicon.png" alt="Logo" width="100" height="100"/> 
   </a>
 
 <h3 align="center">Forest Fire Predictor</h3>
