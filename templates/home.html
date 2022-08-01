@@ -20,8 +20,10 @@
 
 <body>
   <div class="login">
-    <h1>Algeria Forest Fire Prediction</h1>
-
+    <br>
+    <br>
+    <h1 style="color:antiquewhite">Algeria Forest Fire Prediction</h1>
+    <br>
     <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('html_predict')}}" method="post">
       <input type="text" name="Temperature" placeholder="Temperature(celsius)" required="required" /><br>
@@ -42,7 +44,7 @@
     <br>
 
   </div>
-  {{prediction_text}}
+  <h2 style="background-color:black;color:crimson;">{{prediction_text}}</h2>    
 
 </body>
 
