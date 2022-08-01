@@ -40,9 +40,8 @@ def html_predict():
     print(data)
     output = model.predict(final_features)[0]
     print(output)
-    return render_template('home.html', prediction_text="fire prediction : {}".format(output))
+    return render_template('home.html', prediction_text="Fire Prediction : {}".format(output.upper()))
 
 
 if __name__=='__main__':
     app.run(debug=True)
-
