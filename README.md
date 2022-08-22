@@ -56,13 +56,10 @@
 * Creating Flask app by importing `Flask` module.
 * Download the source dataset from [UCI Repository](https://archive.ics.uci.edu/ml/datasets/Algerian+Forest+Fires+Dataset++#).
 * For Classification algorithm decided to predict the features `Classes` from the dataset which is Binary classification `(fire, not fire)`.
-* For Regression Problem algorithm decided to predict the feature `FWI` (Fire weather Index) which is 90%+ correlated to Classes Feature.
 
-### Loading CSV and Inserting to DB
+### Loading CSV
 * The Downloaded CSV file is loaded as pandas Dataframe using Pandas Library.
 * Pandas Dataframe is converted to Dict .
-* Mongodb Altas is used as DB here, with `pymongo library` mongodb is connected to python.
-* Database and collections created via python and the list of dictionaries is uploaded using `collection.insert_many` method.
 
 <p align="right">(<a href="#top">back to top</a>)</p> 
 
@@ -71,10 +68,8 @@
 * It is always a good practice to understand the data first and try to gather as many insights from it.
 
 ### Model Building 
-* For Regression Problem algorithm decided to predict the feature `FWI` (Fire weather Index) which is 90%+ correlated to Classes Feature.
-* Models used : **Linear regression, Lasso Regression, Ridge Regression, Random forest, Decision tree, K-Nearest Neighbour regressor, Support Vector Regressor.**
 * For Classification algorithm decided to predict the features `Classes` from the dataset which is Binary classification `(fire, not fire)`.
-* Models used : **Logistic Regression, Decision Tree, Random Forest, XGboost, K-Nearest Neighbour.**
+* Models used : ** Decision Tree, Random Forest, K-Nearest Neighbour.**
 
 ### Model Selection
 * HyperParameter Tuning Randomized Gridsearch CV is done for top 2 models for both Regression and Classification.
