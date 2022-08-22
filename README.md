@@ -42,8 +42,7 @@
 * Pandas, Numpy, Matplotlib for csv reading, Data Processing, Data Cleaning, Visualization etc.
 
 ## Deployed app
-[![Screenshot (10)]()
-](https://algeriansfiremodel.herokuapp.com/)
+[Screenshot](https://raw.githubusercontent.com/M-Oblue/algerians/main/static/css/app.png)
 
 [LINK TO HEROKU APP](https://algeriansfiremodel.herokuapp.com/)
 
