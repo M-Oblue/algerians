@@ -74,7 +74,6 @@
 ### Model Selection
 * HyperParameter Tuning Randomized Gridsearch CV is done for top 2 models for both Regression and Classification.
 * For Classification `Stratified Kfold Cross-Validation metrics` is used based best Mean CV Accuracy Model is used for Model Deployment.
-* For Regression `R2 score metrics` is used to select best model The R2 score is one of the performance evaluation measures for regression-based machine learning models.
 
 ### Flask
 * Importing the Flask module and creating a Flask web server from the Flask module.
