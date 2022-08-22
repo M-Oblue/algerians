@@ -27,8 +27,6 @@
     <a href="https://github.com/M-Oblue/algerians/blob/main/app.py">View Flask app code</a>
     ·
     <a href="https://github.com/M-Oblue/algerians/blob/main/algerian%20forest%20fire%20.ipynb"> Model Building</a>
-    ·
-    <a href="https://github.com/M-Oblue/algerians/blob/main/algerian%20forest%20fire%20%20new%20analysis.ipynb">EDA on Forest Fires dataset</a>
   </p>
 </div>
 
