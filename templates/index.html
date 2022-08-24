@@ -1,20 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - A Pen by Abhishek Pandey</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
 <html>
-<!--From https://codepen.io/frytyler/pen/EGdtg-->
 
 <head>
   <meta charset="UTF-8">
   <title>ML API</title>
+  <link rel="stylesheet" href="static/css/styles.css">
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
@@ -30,20 +20,22 @@
 
 <body>
   <div class="login">
-    <h1>Algeria forest fire prediction</h1>
-
+    <br>
+    <br>
+    <h1 style="color:rgb(243, 131, 56)">Algeria Forest Fire Prediction</h1>
+    <br>
     <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('html_predict')}}" method="post">
-      <input type="text" name="Temperature" placeholder="Temperature" required="required" /><br>
-      <input type="text" name="RH" placeholder="RH" required="required" /><br>
-      <input type="text" name="WS" placeholder="WS" required="required" /><br>
-      <input type="text" name="Rain" placeholder="Rain" required="required" /><br>
-      <input type="text" name="FFMC" placeholder="FFMC" required="required" /><br>
-      <input type="text" name="DMC" placeholder="DMC" required="required" /><br>
-      <input type="text" name="DC" placeholder="DC" required="required" /><br>
-      <input type="text" name="ISI" placeholder="ISI" required="required" /><br>
-      <input type="text" name="BUI" placeholder="BUI" required="required" /><br>
-      <input type="text" name="FWI" placeholder="FWI" required="required" /><br>
+      <label for="fname" style="color:white;font-size: 100%; background-color:rgb(0, 0, 0) ;">Temperature(celsius)</label><br><input type="text" name="Temperature" placeholder="between 22 to 42 celsius" required="required" /><br>
+      <label for="fname" style="color:white;font-size: 100%;background-color:rgb(0, 0, 0) ;">RH(% relative humidity)</label><br><input type="text" name="RH" placeholder="between 21% to 90%" required="required" /><br>
+      <label for="fname" style="color:white;font-size: 100%;background-color:rgb(0, 0, 0) ;">WS(wind speed km/hr)</label><br><input type="text" name="WS" placeholder="between 22 km/hr to 42 km/hr" required="required" /><br>
+      <label for="fname" style="color:white;font-size: 100%;background-color:rgb(0, 0, 0) ;">Rain(total rain in mm)</label><br><input type="text" name="Rain" placeholder="between 0mm to 16.8mm" required="required" /><br>
+      <label for="fname" style="color:white;font-size: 100%;background-color:rgb(0, 0, 0) ;">FFMC(fine fuel moisture code index)</label><br><input type="text" name="FFMC" placeholder="between 28.6 to 92.5" required="required" /><br>
+      <label for="fname" style="color:white;font-size: 100%;background-color:rgb(0, 0, 0) ;">DMC(duff moisture code index)</label><br><input type="text" name="DMC" placeholder="between 1.1 to 65.9" required="required" /><br>
+      <label for="fname" style="color:white;font-size: 100%;background-color:rgb(0, 0, 0) ;">DC(drought code index)</label><br><input type="text" name="DC" placeholder="between 7 to 220.4" required="required" /><br>
+      <label for="fname" style="color:white;font-size: 100%;background-color:rgb(0, 0, 0) ;">ISI(Initial spread index)</label><br><input type="text" name="ISI" placeholder="between 0 to 18.5" required="required" /><br>
+      <label for="fname" style="color:white;font-size: 100%;background-color:rgb(0, 0, 0) ;">FBUI(buildup index)</label><br><input type="text" name="BUI" placeholder="between 1.1 to 68" required="required" /><br>
+      <label for="fname" style="color:white;font-size: 100%;background-color:rgb(0, 0, 0) ;">FWI(fire weather index)</label><br><input type="text" name="FWI" placeholder="between 0 to 31.1" required="required" /><br>
 
       <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
@@ -52,13 +44,10 @@
     <br>
 
   </div>
-  {{prediction_text}}
+  <h2 style="background-color:black;color:chartreuse;">{{prediction_text}}</h2>    
+  <h2 style="background-color:black;color:crimson;">{{prediction_text1}}</h2>
 
 </body>
 
 </html>
-<!-- partial -->
-  <script  src="./script.js"></script>
 
-</body>
-</html>
