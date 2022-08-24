@@ -26,17 +26,16 @@
     <br>
     <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('html_predict')}}" method="post">
-      <input type="text" name="Temperature" placeholder="Temperature(celsius)" required="required" /><br>
-      <input type="text" name="RH" placeholder="RH(% relative humidity)" required="required" /><br>
-      <input type="text" name="WS" placeholder="WS(wind speed km/hr)" required="required" /><br>
-      <input type="text" name="Rain" placeholder="Rain(total rain in mm)" required="required" /><br>
-      <input type="text" name="FFMC" placeholder="FFMC(fine fuel moisture code index)" required="required" /><br>
-      <input type="text" name="DMC" placeholder="DMC(duff moisture code index)" required="required" /><br>
-      <input type="text" name="DC" placeholder="DC(drought code index)" required="required" /><br>
-      <input type="text" name="ISI" placeholder="ISI(Initial spread index)" required="required" /><br>
-      <input type="text" name="BUI" placeholder="BUI(buildup index)" required="required" /><br>
-      <input type="text" name="FWI" placeholder="FWI(fire weather index)" required="required" /><br>
-
+      <input type="text" name="Temperature" placeholder="Temperature(between 22 to 42 celsius)" size="45" required="required" /><br>
+      <input type="text" name="RH" placeholder="Relative Humidity(between 21% to 90%)" size="45"required="required" /><br>
+      <input type="text" name="WS" placeholder="Wind Speed(between 22 km/hr to 42 km/hr)" size="45" required="required" /><br>
+      <input type="text" name="Rain" placeholder="Total Daily Rain(between 0mm to 16.8mm)" size="45" required="required" /><br>
+      <input type="text" name="FFMC" placeholder="Fine Fuel Moisture Code Index(between 28.6 to 92.5)" size="45" required="required" /><br>
+      <input type="text" name="DMC" placeholder="Duff Moisture Code Index(between 1.1 to 65.9)" size="45" required="required" /><br>
+      <input type="text" name="DC" placeholder="Drought Code Index(between 7 to 220.4)" size="45" required="required" /><br>
+      <input type="text" name="ISI" placeholder="Initial Spread Index(between 0 to 18.5)" size="45" required="required" /><br>
+      <input type="text" name="BUI" placeholder="Buildup Index(between 1.1 to 68)" size="45" required="required" /><br>
+      <input type="text" name="FWI" placeholder="Fire Weather Index(between 0 to 31.1)" size="45" required="required" /><br><br><br>
       <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
 
